@@ -13,7 +13,7 @@ public class InputMethods {
     private static final String EMPTY_ALERT = "===>> Trường nhập vào không thể để trống! Vui lòng thử lại....";
     /*========================================Input Method Start========================================*/
 
-    public static DateTimeFormatter sdf = new DateTimeFormatter("dd-MM-yyyy");
+    public static DateTimeFormatter sdf = DateTimeFormatter.ofPattern("dd-MM-yyyy");
     /**
      * getString()  Return a String value from the user.
      */

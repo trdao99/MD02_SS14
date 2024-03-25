@@ -14,6 +14,5 @@ public class Toupper {
         }
         System.out.println(strings);
         strings.stream().map(String::toUpperCase).forEach(System.out::println);
-
     }
 }

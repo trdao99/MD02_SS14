@@ -8,9 +8,10 @@ import java.util.Scanner;
 
 public class DateTimeAPI {
     public static void main(String[] args) {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 //        //-------------------------bai1
 //
-//        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+//
 //        ZonedDateTime zonedAETDateTime = ZonedDateTime.now(ZoneId.of("Australia/Sydney"));
 //        ZonedDateTime zonedJSTDateTime = ZonedDateTime.now(ZoneId.of("Asia/Tokyo"));
 //        ZonedDateTime zonedBETDateTime = ZonedDateTime.now(ZoneId.of("America/Sao_Paulo"));
@@ -33,6 +34,9 @@ public class DateTimeAPI {
 //        //-------------------------bai5
 //
 //        LocalDate localDate = LocalDate.now();
+//        YearMonth y = YearMonth.of(localDate.getYear(), localDate.getMonth());
+//        System.out.println(y.lengthOfMonth());
+//        System.out.println(y.lengthOfYear());
 //        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 //        LocalDate localDate3 = LocalDate.of(localDate.getYear() + 1, 1, 1);
 //        System.out.println(Duration.between(localDate.atStartOfDay(), localDate3.atStartOfDay()).toDays()  + localDate.getDayOfYear()-1);
@@ -59,10 +63,10 @@ public class DateTimeAPI {
 //        System.out.println(localTime1.compareTo(localTime2));
 //        //-------------------------bai11
 //        //-------------------------bai12
-        LocalDate localDatee3  = LocalDate.now();
+        LocalDate localDatee3 = LocalDate.now();
         System.out.println(localDatee3);
-        System.out.println("ngày trước: "+ localDatee3.minusDays(1));
-        System.out.println("ngày sau: "+ localDatee3.plusDays(1) );
+        System.out.println("ngày trước: " + localDatee3.minusDays(1));
+        System.out.println("ngày sau: " + localDatee3.plusDays(1));
     }
 }
 
